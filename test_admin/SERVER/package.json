@@ -1,0 +1,24 @@
+{
+  "name": "nodejsserver",
+  "version": "1.0.0",
+  "description": "HTTP and websocket server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "openshift": "nodeshift --expose --dockerImage=registry.access.redhat.com/rhoar-nodejs/nodejs-8",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdufr086/romaerisWebsite.git"
+  },
+  "author": "Joshua Dufresne <joshduf98@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdufr086/romaerisWebsite/issues"
+  },
+  "homepage": "https://github.com/jdufr086/romaerisWebsite#readme",
+  "engines": {
+    "node": "6.12.1"
+  }
+}

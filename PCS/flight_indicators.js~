@@ -1,0 +1,12 @@
+// Dynamic examples
+var Navio1_attitude = $.flightIndicator('#Navio1_attitude', 'Navio1_attitude', {roll:00, pitch:00, size:500, showBox : true});
+
+// Update at 20Hz
+var increment = 0;
+setInterval(function() {
+    // Attitude update
+    Navio1_attitude.setRoll(30*Math.sin(increment/10));
+    Navio1_attitude.setPitch(50*Math.sin(increment/20));
+    
+    increment++;
+}, 50);
